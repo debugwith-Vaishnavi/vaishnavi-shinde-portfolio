@@ -1,19 +1,19 @@
 import { ReactTyped } from "react-typed";
 import { motion } from "framer-motion";
-import Skills from "../components/Skills";
-import Projects from "../components/projects.jsx";
-import About from "../components/About";
-import Journey from "../components/Journey";
-import Certifications from "../components/Certifications";
+import Skills from "../components/Skills.jsx";
+import Projects from "../components/Projects.jsx";
+import About from "../components/About.jsx";
+import Journey from "../components/Journey.jsx";
+import Certifications from "../components/Certifications.jsx";
 import FloatingIcons from "../components/FloatingIcons.jsx";
-import WhyHireMe from "../components/WhyHireMe";
-import IntroAI from "../components/IntroAI";
-import ContactFooter from "../components/ContactFooter";
-import Contact from "../components/Contact";
-import Testimonials from "../components/Testimonials";
-import CustomCursor from "../components/CustomCursor";
+import WhyHireMe from "../components/WhyHireMe.jsx";
+import IntroAI from "../components/IntroAI.jsx";
+import ContactFooter from "../components/ContactFooter.jsx";
+import Contact from "../components/Contact.jsx";
+import Testimonials from "../components/Testimonials.jsx";
+import CustomCursor from "../components/CustomCursor.jsx";
 // import VisitorCounter from "../components/VisitorCounter";
-import ParticlesBackground from "../components/ParticlesBackground";
+// import ParticlesBackground from "../components/ParticlesBackground.jsx";
 import {
   FaGithub,
   FaLinkedin,
@@ -67,7 +67,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative max-w-7xl mx-auto px-6 min-h-screen flex flex-col lg:flex-row items-center justify-between pt-28 overflow-hidden">
       
-<ParticlesBackground/> 
+{/* // <ParticlesBackground/>  */}
         {/* Floating Background Icons */}
         {/* <div className="mt-8 flex justify-center">
   <VisitorCounter />
