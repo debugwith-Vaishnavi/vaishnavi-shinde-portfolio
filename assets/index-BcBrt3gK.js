@@ -609,7 +609,7 @@ Try clicking the quick buttons below 👇`}]),[n,r]=(0,b.useState)(``),i=()=>{if
     hover:scale-110\r
     hover:shadow-[0_0_35px_rgba(34,211,238,0.4)]\r
     transition-all duration-500\r
-    `,children:`🚀 Hire Me`}),(0,H.jsx)(`a`,{href:`/resume.pdf`,target:`_blank`,rel:`noreferrer`,className:`\r
+    `,children:`🚀 Hire Me`}),(0,H.jsx)(`a`,{href:`/vaishnavi-shinde-portfolio/resume.pdf`,target:`_blank`,rel:`noreferrer`,className:`\r
   bg-gradient-to-r\r
   from-cyan-500\r
   to-purple-600\r
