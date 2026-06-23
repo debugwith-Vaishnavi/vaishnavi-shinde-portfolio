@@ -1,14 +1,63 @@
+import { useEffect, useState } from "react";
+import { db } from "../firebase";
+
+import {
+  collection,
+  addDoc,
+  getDocs,
+} from "firebase/firestore";
+
 export default function Testimonials() {
+  const [reviews, setReviews] = useState([]);
+  const [name, setName] = useState("");
+  const [feedback, setFeedback] = useState("");
+
+  useEffect(() => {
+    fetchReviews();
+  }, []);
+
+  const fetchReviews = async () => {
+    const querySnapshot = await getDocs(
+      collection(db, "reviews")
+    );
+
+    const data = querySnapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+
+    setReviews(data);
+  };
+
+  const submitReview = async (e) => {
+    e.preventDefault();
+
+    if (!name || !feedback) {
+      alert("Please fill all fields");
+      return;
+    }
+
+    await addDoc(collection(db, "reviews"), {
+      name,
+      feedback,
+    });
+
+    setName("");
+    setFeedback("");
+
+    fetchReviews();
+
+    alert("Review Submitted Successfully 🚀");
+  };
+
   return (
     <section
       id="testimonials"
-      className="py-24 bg-slate-950"
+      className="py-24 bg-slate-950 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* Heading */}
         <div className="text-center mb-16">
-
           <p className="text-cyan-400 tracking-[4px] uppercase">
             10 — TESTIMONIALS
           </p>
@@ -21,78 +70,132 @@ export default function Testimonials() {
           </h2>
 
           <p className="text-slate-400 mt-5">
-            Feedback from mentors, internship experience and project guidance.
+            Feedback from clients, mentors and visitors.
           </p>
-
         </div>
 
-        {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-6">
-            <div
-  className="
-  bg-slate-900/60
-  border border-cyan-500/20
-  rounded-3xl
-  p-6
-  hover:scale-105
-  hover:border-cyan-400
-  hover:shadow-[0_0_35px_rgba(34,211,238,0.25)]
- 
-  transition-all duration-500
-  "
->
-  <p className="text-slate-300 leading-7">
-    "Vaishnavi demonstrates excellent problem-solving skills
-    and dedication towards learning new technologies."
-  </p>
+        {/* Review Form */}
 
-  <h4 className="text-cyan-400 font-bold mt-6">
-    Academic Mentor
-  </h4>
-</div>
+        <form
+          onSubmit={submitReview}
+          className="
+          bg-slate-900/60
+          border border-cyan-500/20
+          rounded-3xl
+          p-8
+          mb-14
+          "
+        >
+          <h3 className="text-2xl font-bold mb-6">
+            Leave A Review
+          </h3>
 
-<div
-  className="
-  bg-slate-900/60
-  border border-purple-500/20
-  rounded-3xl
-  p-6
-  hover:scale-105
-  hover:border-purple-400
-  hover:shadow-[0_0_35px_rgba(168,85,247,0.25)]
-  transition-all duration-500
-  "
->
-  <p className="text-slate-300 leading-7">
-    "Her project execution, technical understanding and
-    eagerness to learn are impressive for a fresher."
-  </p>
+          <input
+            type="text"
+            placeholder="Your Name"
+            value={name}
+            onChange={(e) =>
+              setName(e.target.value)
+            }
+            className="
+            w-full
+            p-4
+            rounded-xl
+            bg-slate-800
+            border border-slate-700
+            mb-4
+            outline-none
+            hover:scale-100
+      hover:border-cyan-400
+      hover:shadow-[0_0_35px_rgba(34,211,238,0.3)]
+            "
+          />
 
-  <h4 className="text-purple-400 font-bold mt-6">
-    Internship Reviewer
-  </h4>
-</div>
-<div
-  className="
-  bg-slate-900/60
-  border border-green-500/20
-  rounded-3xl
-  p-6
-  hover:scale-105
-  hover:border-green-400
-  hover:shadow-[0_0_35px_rgba(34,197,94,0.25)]
-  transition-all duration-500
-  "
->
-  <p className="text-slate-300 leading-7">
-    "Professional communication, dedication and quick
-    learning make her a valuable team member."
-  </p>
+          <textarea
+            placeholder="Your Feedback"
+            value={feedback}
+            onChange={(e) =>
+              setFeedback(e.target.value)
+            }
+            rows="4"
+            className="
+            w-full
+            p-4
+            rounded-xl
+            bg-slate-800
+            border border-slate-700
+            mb-4
+            outline-none
+            hover:scale-100
+      hover:border-cyan-400
+      hover:shadow-[0_0_35px_rgba(34,211,238,0.3)]
+            "
+          />
 
-  <h4 className="text-green-400 font-bold mt-6">
-    Project Guide
-  </h4>
-</div>
+          <button
+            type="submit"
+            className="
+            bg-gradient-to-r
+            from-cyan-500
+            to-purple-600
+            px-6 py-3
+            rounded-full
+            font-semibold
+            hover:scale-105
+            transition-all
+            "
+          >
+            Submit Review
+          </button>
+        </form>
+
+        {/* Moving Reviews */}
+
+        <div className="overflow-hidden">
+
+          <div className="flex gap-6 animate-testimonials">
+
+            {[...reviews, ...reviews].map(
+  (review, index) => (
+    <div
+      key={`${review.id}-${index}`}
+      onClick={(e) => {
+        e.currentTarget.classList.add("clicked-glow");
+
+        setTimeout(() => {
+          e.currentTarget.classList.remove(
+            "clicked-glow"
+          );
+        }, 1000);
+      }}
+      className="
+      min-w-[280px]
+      max-w-[280px]
+      bg-slate-900/70
+      border border-cyan-500/20
+      rounded-3xl
+      p-6
+      flex-shrink-0
+      cursor-pointer
+      hover:scale-105
+      hover:border-cyan-400
+      hover:shadow-[0_0_35px_rgba(34,211,238,0.3)]
+      transition-all duration-500
+      // testimonial-glow
+      "
+    >
+      <p className="text-slate-300 leading-7 text-sm">
+        "{review.feedback}"
+      </p>
+
+      <h4 className="text-cyan-400 font-bold mt-5">
+        {review.name}
+      </h4>
+    </div>
+  )
+)}
+
+          </div>
 
         </div>
 
