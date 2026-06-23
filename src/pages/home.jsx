@@ -24,8 +24,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white overflow-hidden">
-       
+    <div className="relative z-10 min-h-screen bg-slate-950 text-white overflow-hidden">
       {/* Navbar */}
       <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/20 border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
