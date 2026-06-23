@@ -617,16 +617,6 @@ Try clicking the quick buttons below 👇`}]),[n,r]=(0,b.useState)(``),i=()=>{if
   rounded-full\r
   font-semibold\r
   hover:scale-110\r
-  hover:shadow-[0_0_35px_rgba(34,211,238,0.4)]\r
-  transition-all duration-500\r
-  `,children:`👀 View Resume`}),(0,H.jsx)(`a`,{href:`/resume.pdf`,download:!0,className:`\r
-  bg-gradient-to-r\r
-  from-cyan-500\r
-  to-purple-600\r
-  px-6 py-3\r
-  rounded-full\r
-  font-semibold\r
-  hover:scale-110\r
   hover:shadow-[0_0_35px_rgba(168,85,247,0.4)]\r
   transition-all duration-500\r
   `,children:`📄 Download Resume`})]})]}),(0,H.jsx)(Y.div,{initial:{opacity:0,x:40},animate:{opacity:1,x:0},transition:{duration:.8},className:`flex-1 flex justify-center mt-16 lg:mt-0 z-10`,children:(0,H.jsxs)(`div`,{className:`relative flex items-center justify-center`,children:[(0,H.jsx)(`div`,{className:`absolute w-[450px] h-[450px] bg-cyan-500/10 blur-[150px] rounded-full`}),(0,H.jsx)(`div`,{className:`absolute w-[400px] h-[400px] bg-purple-500/10 blur-[150px] rounded-full`}),(0,H.jsx)(Y.div,{animate:{rotate:360},transition:{repeat:1/0,duration:12,ease:`linear`},className:`absolute w-[340px] h-[340px] rounded-full bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-500 p-1`,children:(0,H.jsx)(`div`,{className:`w-full h-full rounded-full bg-slate-950`})}),(0,H.jsxs)(`div`,{className:`relative flex items-center justify-center`,children:[(0,H.jsx)(`div`,{className:`\r
