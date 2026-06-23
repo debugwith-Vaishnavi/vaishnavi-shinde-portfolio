@@ -25,13 +25,13 @@ export default function Projects() {
       link: "#",
     },
    {
-  title: "Snake Game",
+   title: "Snake Game",
   icon: <FaGamepad />,
   description:
     "Classic Snake Game developed using Python Tkinter with score tracking, collision detection and smooth controls.",
   tech: ["Python", "Tkinter", "GUI", "Game Dev"],
-   link: "/videos/snake-game.mp4",
-  video: "/videos/snake-game.mp4",
+  link: `${import.meta.env.BASE_URL}videos/snake-game.mp4`,
+  video: `${import.meta.env.BASE_URL}videos/snake-game.mp4`,
 },
     {
       title: "Portfolio Website",

@@ -413,23 +413,21 @@ export default function Home() {
     className="relative z-10"
     
   >
-    
     <img
-      src="/profile.jpg"
-      alt="Vaishnavi Shinde"
-      className="
-        w-[300px]
-        h-[300px]
-        object-cover
-        rounded-full
-        border-4
-        border-cyan-400/30
-        shadow-[0_0_50px_rgba(34,211,238,0.5)]
-        transition-all
-        duration-500
-      "
-      
-    />
+  src={`${import.meta.env.BASE_URL}profile.jpg`}
+  alt="Vaishnavi Shinde"
+  className="
+    w-[300px]
+    h-[300px]
+    object-cover
+    rounded-full
+    border-4
+    border-cyan-400/30
+    shadow-[0_0_50px_rgba(34,211,238,0.5)]
+    transition-all
+    duration-500
+  "
+/>
   </motion.div>
 
 </div>
