@@ -150,13 +150,18 @@ Try clicking the quick buttons below 👇`,
   transition-all duration-500
   "
 >
-  <iframe
-    src="https://drive.google.com/file/d/1Zhy-RwdRGyUA4a_pnBOglSgXJ9BjJW4k/preview"
-    width="100%"
-    height="450"
-    allow="autoplay"
-    title="Introduction Video"
+  <video
+  controls
+  width="100%"
+  height="450"
+  title="Introduction Video"
+  className="w-full h-[450px] object-cover"
+>
+  <source
+    src={`${import.meta.env.BASE_URL}videos/intro.mp4`}
+    type="video/mp4"
   />
+</video>
 
   {/* Overlay Content */}
 <div className="absolute bottom-4 left-4 right-4">
