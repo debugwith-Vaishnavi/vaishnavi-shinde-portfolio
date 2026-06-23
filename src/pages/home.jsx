@@ -12,8 +12,7 @@ import ContactFooter from "../components/ContactFooter.jsx";
 import Contact from "../components/Contact.jsx";
 import Testimonials from "../components/Testimonials.jsx";
 import CustomCursor from "../components/CustomCursor.jsx";
-// import VisitorCounter from "../components/VisitorCounter";
-// import ParticlesBackground from "../components/ParticlesBackground.jsx";
+
 import {
   FaGithub,
   FaLinkedin,
@@ -462,7 +461,7 @@ export default function Home() {
 
 
 
-<section
+{/* <section
   id="about"
   className="max-w-7xl mx-auto px-6 py-24 text-white"
 >
@@ -498,7 +497,7 @@ export default function Home() {
       </div>
     </div>
   </div>
-</section>
+</section> */}
 
 
 
