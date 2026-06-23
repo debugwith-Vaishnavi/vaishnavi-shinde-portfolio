@@ -52,7 +52,7 @@ Error generating stack: `+e.message+`
                   via-blue-500\r
                   to-purple-500\r
                   rounded-full\r
-                `})})]},t))})]})}function rd(){return(0,H.jsx)(`section`,{id:`projects`,className:`min-h-screen bg-slate-950 text-white py-24 px-6`,children:(0,H.jsxs)(`div`,{className:`max-w-7xl mx-auto`,children:[(0,H.jsxs)(`div`,{className:`text-center mb-16`,children:[(0,H.jsx)(`p`,{className:`text-cyan-400 tracking-[4px] uppercase mb-4`,children:`03 — PROJECTS`}),(0,H.jsxs)(`h2`,{className:`text-5xl md:text-7xl font-bold`,children:[`Featured`,` `,(0,H.jsx)(`span`,{className:`bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent`,children:`Work`})]}),(0,H.jsx)(`div`,{className:`w-28 h-1 bg-gradient-to-r from-cyan-400 to-purple-500 mx-auto mt-5 rounded-full`})]}),(0,H.jsx)(`div`,{className:`grid md:grid-cols-2 gap-8`,children:[{title:`Edu2Job`,icon:(0,H.jsx)(Lu,{}),description:`Machine Learning based web application that predicts suitable job roles based on educational background and skills.`,tech:[`Python`,`Django`,`Machine Learning`,`SQL`],link:`https://edu2job-education-to-job-role-prediction-gk5d.onrender.com`},{title:`Sorting Visualizer`,icon:(0,H.jsx)(Wu,{}),description:`Interactive visualization of Bubble Sort, Selection Sort, Merge Sort and Quick Sort algorithms.`,tech:[`C++`,`DSA`,`OOP`,`Algorithms`],link:`#`},{title:`Snake Game`,icon:(0,H.jsx)(Hu,{}),description:`Classic Snake Game developed using Python Tkinter with score tracking, collision detection and smooth controls.`,tech:[`Python`,`Tkinter`,`GUI`,`Game Dev`],link:`/videos/snake-game.mp4`,video:`/videos/snake-game.mp4`},{title:`Portfolio Website`,icon:(0,H.jsx)(Bu,{}),description:`Modern responsive portfolio built with React, Tailwind CSS and Framer Motion featuring smooth animations.`,tech:[`React`,`Tailwind`,`Framer Motion`,`UI/UX`],link:`#`}].map((e,t)=>(0,H.jsxs)(Y.div,{whileHover:{y:-12,scale:1.02,boxShadow:`0 0 30px rgba(34,211,238,0.20)`},className:`\r
+                `})})]},t))})]})}function rd(){return(0,H.jsx)(`section`,{id:`projects`,className:`min-h-screen bg-slate-950 text-white py-24 px-6`,children:(0,H.jsxs)(`div`,{className:`max-w-7xl mx-auto`,children:[(0,H.jsxs)(`div`,{className:`text-center mb-16`,children:[(0,H.jsx)(`p`,{className:`text-cyan-400 tracking-[4px] uppercase mb-4`,children:`03 — PROJECTS`}),(0,H.jsxs)(`h2`,{className:`text-5xl md:text-7xl font-bold`,children:[`Featured`,` `,(0,H.jsx)(`span`,{className:`bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent`,children:`Work`})]}),(0,H.jsx)(`div`,{className:`w-28 h-1 bg-gradient-to-r from-cyan-400 to-purple-500 mx-auto mt-5 rounded-full`})]}),(0,H.jsx)(`div`,{className:`grid md:grid-cols-2 gap-8`,children:[{title:`Edu2Job`,icon:(0,H.jsx)(Lu,{}),description:`Machine Learning based web application that predicts suitable job roles based on educational background and skills.`,tech:[`Python`,`Django`,`Machine Learning`,`SQL`],link:`https://edu2job-education-to-job-role-prediction-gk5d.onrender.com`},{title:`Sorting Visualizer`,icon:(0,H.jsx)(Wu,{}),description:`Interactive visualization of Bubble Sort, Selection Sort, Merge Sort and Quick Sort algorithms.`,tech:[`C++`,`DSA`,`OOP`,`Algorithms`],link:`#`},{title:`Snake Game`,icon:(0,H.jsx)(Hu,{}),description:`Classic Snake Game developed using Python Tkinter with score tracking, collision detection and smooth controls.`,tech:[`Python`,`Tkinter`,`GUI`,`Game Dev`],link:`/vaishnavi-shinde-portfolio/videos/snake-game.mp4`,video:`/vaishnavi-shinde-portfolio/videos/snake-game.mp4`},{title:`Portfolio Website`,icon:(0,H.jsx)(Bu,{}),description:`Modern responsive portfolio built with React, Tailwind CSS and Framer Motion featuring smooth animations.`,tech:[`React`,`Tailwind`,`Framer Motion`,`UI/UX`],link:`#`}].map((e,t)=>(0,H.jsxs)(Y.div,{whileHover:{y:-12,scale:1.02,boxShadow:`0 0 30px rgba(34,211,238,0.20)`},className:`\r
               bg-slate-900/70\r
               border border-cyan-500/20\r
               rounded-3xl\r
@@ -660,14 +660,14 @@ Try clicking the quick buttons below 👇`}]),[n,r]=(0,b.useState)(``),i=()=>{if
       border\r
       border-purple-400/30\r
       border-dashed\r
-    `}),(0,H.jsx)(Y.div,{animate:{y:[0,-12,0]},transition:{duration:4,repeat:1/0},whileHover:{scale:1.08},className:`relative z-10`,children:(0,H.jsx)(`img`,{src:`/profile.jpg`,alt:`Vaishnavi Shinde`,className:`\r
-        w-[300px]\r
-        h-[300px]\r
-        object-cover\r
-        rounded-full\r
-        border-4\r
-        border-cyan-400/30\r
-        shadow-[0_0_50px_rgba(34,211,238,0.5)]\r
-        transition-all\r
-        duration-500\r
-      `})})]})]})})]}),(0,H.jsx)(id,{}),(0,H.jsx)(nd,{}),(0,H.jsx)(rd,{}),(0,H.jsx)(od,{}),(0,H.jsx)(sd,{}),(0,H.jsx)(ud,{}),(0,H.jsx)(ld,{}),(0,H.jsx)(dd,{}),(0,H.jsx)(pd,{}),(0,H.jsx)(fd,{}),(0,H.jsx)(md,{})]})}function gd(){return(0,H.jsx)(hd,{})}(0,x.createRoot)(document.getElementById(`root`)).render((0,H.jsx)(b.StrictMode,{children:(0,H.jsx)(gd,{})}));
+    `}),(0,H.jsx)(Y.div,{animate:{y:[0,-12,0]},transition:{duration:4,repeat:1/0},whileHover:{scale:1.08},className:`relative z-10`,children:(0,H.jsx)(`img`,{src:`/vaishnavi-shinde-portfolio/profile.jpg`,alt:`Vaishnavi Shinde`,className:`\r
+    w-[300px]\r
+    h-[300px]\r
+    object-cover\r
+    rounded-full\r
+    border-4\r
+    border-cyan-400/30\r
+    shadow-[0_0_50px_rgba(34,211,238,0.5)]\r
+    transition-all\r
+    duration-500\r
+  `})})]})]})})]}),(0,H.jsx)(id,{}),(0,H.jsx)(nd,{}),(0,H.jsx)(rd,{}),(0,H.jsx)(od,{}),(0,H.jsx)(sd,{}),(0,H.jsx)(ud,{}),(0,H.jsx)(ld,{}),(0,H.jsx)(dd,{}),(0,H.jsx)(pd,{}),(0,H.jsx)(fd,{}),(0,H.jsx)(md,{})]})}function gd(){return(0,H.jsx)(hd,{})}(0,x.createRoot)(document.getElementById(`root`)).render((0,H.jsx)(b.StrictMode,{children:(0,H.jsx)(gd,{})}));
