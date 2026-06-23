@@ -12,7 +12,8 @@ import ContactFooter from "../components/ContactFooter.jsx";
 import Contact from "../components/Contact.jsx";
 import Testimonials from "../components/Testimonials.jsx";
 import CustomCursor from "../components/CustomCursor.jsx";
-
+import ServicesPricing from "../components/ServicesPricing";
+import WorkProcess from "../components/WorkProcess";
 import {
   FaGithub,
   FaLinkedin,
@@ -444,9 +445,12 @@ export default function Home() {
         <IntroAI />
         <WhyHireMe />
         <ContactFooter />
+        <WorkProcess />
+        <ServicesPricing />
         <Testimonials />
         <Contact />
         <CustomCursor />
+        
       </div>
   );
 }
