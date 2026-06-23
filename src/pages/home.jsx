@@ -267,7 +267,7 @@ export default function Home() {
     🚀 Hire Me
   </a>
 
-  {/* View Resume */}
+  {/* View Resume
  <a
   href={`${import.meta.env.BASE_URL}resume.pdf`}
   target="_blank"
@@ -285,12 +285,13 @@ export default function Home() {
   "
 >
   👀 View Resume
-</a>
+</a> */}
 
   {/* Download Resume */}
-  <a
-  href="/resume.pdf"
-  download
+ <a
+  href={`${import.meta.env.BASE_URL}resume.pdf`}
+  target="_blank"
+  rel="noreferrer"
   className="
   bg-gradient-to-r
   from-cyan-500
@@ -321,7 +322,7 @@ export default function Home() {
             {/* Glow */}
             <div className="absolute w-[450px] h-[450px] bg-cyan-500/10 blur-[150px] rounded-full"></div>
 
-<div className="absolute w-[400px] h-[400px] bg-purple-500/10 blur-[150px] rounded-full"></div>
+            <div className="absolute w-[400px] h-[400px] bg-purple-500/10 blur-[150px] rounded-full"></div>
 
             {/* Rotating Ring */}
             <motion.div
