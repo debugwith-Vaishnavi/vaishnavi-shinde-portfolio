@@ -52,7 +52,7 @@ Error generating stack: `+e.message+`
                   via-blue-500\r
                   to-purple-500\r
                   rounded-full\r
-                `})})]},t))})]})}function wd(){return(0,A.jsx)(`section`,{id:`projects`,className:`min-h-screen bg-slate-950 text-white py-24 px-6`,children:(0,A.jsxs)(`div`,{className:`max-w-7xl mx-auto`,children:[(0,A.jsxs)(`div`,{className:`text-center mb-16`,children:[(0,A.jsx)(`p`,{className:`text-cyan-400 tracking-[4px] uppercase mb-4`,children:`03 — PROJECTS`}),(0,A.jsxs)(`h2`,{className:`text-5xl md:text-7xl font-bold`,children:[`Featured`,` `,(0,A.jsx)(`span`,{className:`bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent`,children:`Work`})]}),(0,A.jsx)(`div`,{className:`w-28 h-1 bg-gradient-to-r from-cyan-400 to-purple-500 mx-auto mt-5 rounded-full`})]}),(0,A.jsx)(`div`,{className:`grid md:grid-cols-2 gap-8`,children:[{title:`Edu2Job`,icon:(0,A.jsx)(ed,{}),description:`Machine Learning based web application that predicts suitable job roles based on educational background and skills.`,tech:[`Python`,`Django`,`Machine Learning`,`SQL`],link:`https://edu2job-education-to-job-role-prediction-gk5d.onrender.com`},{title:`Sorting Visualizer`,icon:(0,A.jsx)(ld,{}),description:`Interactive visualization of Bubble Sort, Selection Sort, Merge Sort and Quick Sort algorithms.`,tech:[`C++`,`DSA`,`OOP`,`Algorithms`],link:`#`},{title:`Snake Game`,icon:(0,A.jsx)(od,{}),description:`Classic Snake Game developed using Python Tkinter with score tracking, collision detection and smooth controls.`,tech:[`Python`,`Tkinter`,`GUI`,`Game Dev`],link:`/vaishnavi-shinde-portfolio/videos/snake-game.mp4`,video:`/vaishnavi-shinde-portfolio/videos/snake-game.mp4`},{title:`Portfolio Website`,icon:(0,A.jsx)(id,{}),description:`Modern responsive portfolio built with React, Tailwind CSS and Framer Motion featuring smooth animations.`,tech:[`React`,`Tailwind`,`Framer Motion`,`UI/UX`],link:`#`}].map((e,t)=>(0,A.jsxs)(N.div,{whileHover:{y:-12,scale:1.02,boxShadow:`0 0 30px rgba(34,211,238,0.20)`},className:`\r
+                `})})]},t))})]})}function wd(){return(0,A.jsx)(`section`,{id:`projects`,className:`min-h-screen bg-slate-950 text-white py-24 px-6`,children:(0,A.jsxs)(`div`,{className:`max-w-7xl mx-auto`,children:[(0,A.jsxs)(`div`,{className:`text-center mb-16`,children:[(0,A.jsx)(`p`,{className:`text-cyan-400 tracking-[4px] uppercase mb-4`,children:`03 — PROJECTS`}),(0,A.jsxs)(`h2`,{className:`text-5xl md:text-7xl font-bold`,children:[`Featured`,` `,(0,A.jsx)(`span`,{className:`bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent`,children:`Work`})]}),(0,A.jsx)(`div`,{className:`w-28 h-1 bg-gradient-to-r from-cyan-400 to-purple-500 mx-auto mt-5 rounded-full`})]}),(0,A.jsx)(`div`,{className:`grid md:grid-cols-2 gap-8`,children:[{title:`Edu2Job`,icon:(0,A.jsx)(ed,{}),description:`Machine Learning based web application that predicts suitable job roles based on educational background and skills.`,tech:[`Python`,`Django`,`Machine Learning`,`SQL`],link:`https://edu2job-education-to-job-role-prediction-gk5d.onrender.com`},{title:`Sorting Visualizer`,icon:(0,A.jsx)(ld,{}),description:`Interactive visualization of Bubble Sort, Selection Sort, Merge Sort and Quick Sort algorithms.`,tech:[`C++`,`DSA`,`OOP`,`Algorithms`],link:`#`},{title:`Snake Game`,icon:(0,A.jsx)(od,{}),description:`Classic Snake Game developed using Python Tkinter with score tracking, collision detection and smooth controls.`,tech:[`Python`,`Tkinter`,`GUI`,`Game Dev`],link:`/videos/snake-game.mp4`,video:`/videos/snake-game.mp4`},{title:`Portfolio Website`,icon:(0,A.jsx)(id,{}),description:`Modern responsive portfolio built with React, Tailwind CSS and Framer Motion featuring smooth animations.`,tech:[`React`,`Tailwind`,`Framer Motion`,`UI/UX`],link:`#`}].map((e,t)=>(0,A.jsxs)(N.div,{whileHover:{y:-12,scale:1.02,boxShadow:`0 0 30px rgba(34,211,238,0.20)`},className:`\r
               bg-slate-900/70\r
               border border-cyan-500/20\r
               rounded-3xl\r
@@ -212,7 +212,7 @@ Try clicking the quick buttons below 👇`}]),[n,r]=(0,b.useState)(``),i=()=>{if
   hover:border-cyan-400\r
   hover:shadow-[0_0_40px_rgba(34,211,238,0.35)]\r
   transition-all duration-500\r
-  `,children:[(0,A.jsx)(`video`,{controls:!0,width:`100%`,height:`450`,title:`Introduction Video`,className:`w-full h-[450px] object-cover`,children:(0,A.jsx)(`source`,{src:`/vaishnavi-shinde-portfolio/videos/intro.mp4`,type:`video/mp4`})}),(0,A.jsx)(`div`,{className:`absolute bottom-4 left-4 right-4`,children:(0,A.jsxs)(`div`,{className:`\r
+  `,children:[(0,A.jsx)(`video`,{controls:!0,width:`100%`,height:`450`,title:`Introduction Video`,className:`w-full h-[450px] object-cover`,children:(0,A.jsx)(`source`,{src:`/videos/intro.mp4`,type:`video/mp4`})}),(0,A.jsx)(`div`,{className:`absolute bottom-4 left-4 right-4`,children:(0,A.jsxs)(`div`,{className:`\r
     bg-slate-950/85\r
     backdrop-blur-xl\r
     rounded-2xl\r
@@ -694,7 +694,7 @@ Total Duration: ${c-l}ms`),J.resolve({didRun:!0,sequenceNumbersCollected:r,targe
     hover:scale-110\r
     hover:shadow-[0_0_35px_rgba(34,211,238,0.4)]\r
     transition-all duration-500\r
-    `,children:`🚀 Hire Me`}),(0,A.jsx)(`a`,{href:`/vaishnavi-shinde-portfolio/resume.pdf`,target:`_blank`,rel:`noreferrer`,className:`\r
+    `,children:`🚀 Hire Me`}),(0,A.jsx)(`a`,{href:`/resume.pdf`,target:`_blank`,rel:`noreferrer`,className:`\r
   bg-gradient-to-r\r
   from-cyan-500\r
   to-purple-600\r
@@ -735,7 +735,7 @@ Total Duration: ${c-l}ms`),J.resolve({didRun:!0,sequenceNumbersCollected:r,targe
       border\r
       border-purple-400/30\r
       border-dashed\r
-    `}),(0,A.jsx)(N.div,{animate:{y:[0,-12,0]},transition:{duration:4,repeat:1/0},whileHover:{scale:1.08},className:`relative z-10`,children:(0,A.jsx)(`img`,{src:`/vaishnavi-shinde-portfolio/profile.jpg`,alt:`Vaishnavi Shinde`,className:`\r
+    `}),(0,A.jsx)(N.div,{animate:{y:[0,-12,0]},transition:{duration:4,repeat:1/0},whileHover:{scale:1.08},className:`relative z-10`,children:(0,A.jsx)(`img`,{src:`/profile.jpg`,alt:`Vaishnavi Shinde`,className:`\r
     w-[300px]\r
     h-[300px]\r
     object-cover\r
