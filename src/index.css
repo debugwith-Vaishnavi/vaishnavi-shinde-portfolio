@@ -2,6 +2,7 @@
 body {
   cursor: none;
 }
+
 @keyframes testimonialsMove {
   0% {
     transform: translateX(-50%);
