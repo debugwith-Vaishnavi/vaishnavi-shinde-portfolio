@@ -30,26 +30,54 @@ export default function Testimonials() {
   };
 
   const submitReview = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    if (!name || !feedback) {
-      alert("Please fill all fields");
-      return;
-    }
+  if (!name || !feedback) {
+    alert("Please fill all fields");
+    return;
+  }
 
+  try {
+    // Save review in Firebase
     await addDoc(collection(db, "reviews"), {
       name,
       feedback,
+      createdAt: new Date(),
+    });
+
+    // Send email notification
+    await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        access_key: "b6d24990-ae36-4496-a6bc-6c4b2dd7cfa0",
+
+        subject: "⭐ New Portfolio Review",
+
+        name: name,
+
+        message: `
+Name: ${name}
+
+Feedback:
+${feedback}
+        `,
+      }),
     });
 
     setName("");
     setFeedback("");
 
-    fetchReviews();
+    await fetchReviews();
 
     alert("Review Submitted Successfully 🚀");
-  };
-
+  } catch (error) {
+    console.error(error);
+    alert("Failed to submit review.");
+  }
+};
   return (
     <section
       id="testimonials"
